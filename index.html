@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+  <header class="flex flex-col justify-center items-center px-16 py-5 w-full bg-white max-md:px-5 max-md:max-w-full">
+    <div class="flex flex-wrap gap-10 w-full max-w-[1179px] max-md:max-w-full">
+      <div class="flex flex-wrap flex-auto gap-10 text-base">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5af4fc6d55e626ecb9f3bc37b6350d7cee5a27e5df4058e263df59ceed04f41e?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Company logo" class="object-contain shrink-0 max-w-full aspect-[3.28] w-[151px]" />
+        <div class="flex flex-grow items-center justify-center w-full lg:w-auto lg:mx-4">
+          <div class="flex border border-gray-300 rounded-md overflow-hidden w-full max-w-md sm:max-w-lg md:max-w-xl">
+              <!-- Search Input -->
+              <input type="text" placeholder="Search" class="w-full px-3 py-2 outline-none text-sm md:text-base" />
+              <!-- Category Dropdown -->
+              <select class="px-3 py-2 border-l border-gray-300 outline-none text-sm md:text-base">
+                  <option>All category</option>
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                  <!-- Add more categories as needed -->
+              </select>
+              <!-- Search Button -->
+              <button class="bg-blue-500 text-white px-3 py-2 text-sm md:text-base">Search</button>
+          </div>
+      </div>
+      <nav class="flex flex-col self-start mt-1.5">
+        <ul class="flex gap-10 items-start self-center">
+          <li>
+            <a href="#profile" aria-label="Profile">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f898f14b2173cea95c5ae9b16cb4e4dbb4a0c214693a36b21452597a583a03f0?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="" class="object-contain shrink-0 w-5 aspect-[1.05] fill-gray-400" />
+              <span class="text-xs text-center text-gray-400">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#message" aria-label="Message">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf08f87535705c1cc09222ca5632a0af4096212bfc961b9b657cad8bb800c63c?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="" class="object-contain shrink-0 w-5 aspect-square fill-gray-400" />
+              <span class="text-xs text-center text-gray-400">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#orders" aria-label="Orders">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1abb82e567ebac5d509306dd9857bf17efadce44a5c74e5fe1db07a2d508c27f?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="" class="object-contain shrink-0 w-5 aspect-[1.11] fill-gray-400" />
+              <span class="text-xs text-center text-gray-400">Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="#cart" aria-label="My cart">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98e2225d78dea7189204ab820cde25159f6cba9cec086e422d8290968dadfb74?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="" class="object-contain shrink-0 self-stretch aspect-square fill-gray-400 w-[21px]" />
+              <span class="text-xs text-center text-gray-400">My cart</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="flex flex-col rounded-none">
+    <div class="px-4 py-5 w-full bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col">
+        <nav class="flex flex-col w-[22%] max-md:ml-0 max-md:w-full">
+          <ul class="flex flex-col text-base max-md:mt-8">
+            <li class="px-2.5 py-3 font-medium whitespace-nowrap bg-sky-100 rounded-md fill-sky-100 text-zinc-900 max-md:pr-5">
+              Automobiles
+            </li>
+            <li class="flex z-10 flex-col items-start pr-12 pl-2.5 mt-3 text-neutral-600 max-md:pr-5">
+              <a href="#clothes">Clothes and wear</a>
+              <a href="#home" class="mt-5">Home interiors</a>
+              <a href="#tech" class="mt-5">Computer and tech</a>
+              <a href="#tools" class="mt-5">Tools, equipments</a>
+              <a href="#sports" class="mt-5">Sports and outdoor</a>
+              <a href="#pets" class="mt-5">Animal and pets</a>
+              <a href="#machinery" class="mt-5">Machinery tools</a>
+              <a href="#more" class="mt-5">More category</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
+          <div class="flex relative flex-col grow items-start px-11 pt-14 pb-44 min-h-[360px] text-zinc-900 max-md:px-5 max-md:pb-24 max-md:mt-8 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/49f3fe369fa3f08cb0192a3ef20077f7f9cb633ff239108a623bef6e6de7933b?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-cover absolute inset-0 size-full" alt="Latest trending electronic items background image" />
+            <h2 class="relative text-3xl">Latest trending</h2>
+            <h3 class="relative text-3xl font-bold">Electronic items</h3>
+            <a href="#learn-more" class="flex relative flex-col justify-center items-center px-4 mt-4 text-base font-medium text-center bg-white rounded-md border border-white border-solid shadow-sm min-h-[40px] text-zinc-900">
+              Learn more
+            </a>
+          </div>
+        </article>
+        <aside class="flex flex-col ml-5 w-[18%] max-md:ml-0 max-md:w-full">
+          <div class="flex flex-col grow text-base max-md:mt-8">
+            <div class="flex flex-col px-2.5 py-3.5 w-full text-sm font-medium bg-sky-100 rounded-md">
+              <div class="flex gap-2.5 self-start text-base text-zinc-900">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4ec0d0636291bdca2c8a7c880db9491ca9fc1f404ce087f50e20b87a886b127?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 w-11 aspect-square" alt="User icon" />
+                <p class="my-auto">Hi, user let's get stated</p>
+              </div>
+              <a href="#join" class="flex flex-col justify-center items-center px-2.5 mt-3.5 w-full text-center text-white rounded-md bg-[linear-gradient(180deg,#127FFF_0%,#0067FF_100%)] min-h-[30px]">
+                Join now
+              </a>
+              <a href="#login" class="flex flex-col justify-center items-center px-2.5 mt-2 w-full text-center text-blue-600 bg-white rounded-md border border-solid border-zinc-200 min-h-[30px]">
+                Log in
+              </a>
+            </div>
+            <a href="#discount" class="px-4 py-5 mt-2.5 text-white bg-orange-400 rounded-md max-md:pr-5">
+              Get US $10 off with a new supplier
+            </a>
+            <a href="#quotes" class="px-4 py-5 mt-2.5 text-white bg-teal-400 rounded-md max-md:pr-5">
+              Send quotes with supplier preferences
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="flex flex-col rounded-none">
+    <div class="py-1 pr-1 pl-5 w-full bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col">
+        <div class="flex flex-col w-[18%] max-md:ml-0 max-md:w-full">
+          <div class="flex flex-col mt-4 w-full max-md:mt-10">
+            <h2 class="self-start text-xl font-semibold tracking-normal leading-snug text-zinc-900">
+              Deals and offers
+            </h2>
+            <div class="flex gap-1.5 mt-9 text-center text-white whitespace-nowrap">
+              <div class="flex flex-col flex-1 p-2 rounded bg-zinc-600">
+                <span class="self-start text-base font-bold">04</span>
+                <span class="text-xs">Days</span>
+              </div>
+              <div class="flex flex-col flex-1 p-2 rounded bg-zinc-600">
+                <span class="self-start text-base font-bold">13</span>
+                <span class="text-xs">Hour</span>
+              </div>
+              <div class="flex flex-col flex-1 items-center px-2.5 py-2 rounded bg-zinc-600">
+                <span class="text-base font-bold">34</span>
+                <span class="text-xs">Min</span>
+              </div>
+              <div class="flex flex-col flex-1 items-center px-2.5 py-2 rounded bg-zinc-600">
+                <span class="text-base font-bold">56</span>
+                <span class="text-xs">Sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col ml-5 w-[82%] max-md:ml-0 max-md:w-full">
+          <div class="flex flex-wrap grow tracking-normal text-center max-md:mt-10">
+            <article class="flex flex-col flex-1">
+              <div class="flex gap-5 pr-5 bg-white">
+                <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[235px]"></div>
+                <div class="flex flex-col items-center my-auto max-w-full w-[140px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42fa8e37f257492ad1eaf37109643d3539d3d94633c9da4aa5e95672c714f1ef?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain self-stretch w-full aspect-square" alt="Smart watch" />
+                  <h3 class="mt-3 text-base text-zinc-900">Smart watches</h3>
+                  <span class="gap-2.5 self-stretch px-3.5 py-1.5 mt-2 text-sm font-medium text-red-600 whitespace-nowrap bg-red-100 min-h-[28px] rounded-[29px]">
+                    -25%
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="flex flex-col flex-1 whitespace-nowrap">
+              <div class="flex gap-5 pr-5 bg-white">
+                <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[235px]"></div>
+                <div class="flex flex-col items-center my-auto max-w-full w-[140px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1b3f4e3f5abda1c12bb20356176109ee0027fed41257e05f5e8dd4482e7e74c?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain self-stretch w-full aspect-square" alt="Laptop" />
+                  <h3 class="mt-3 text-base text-zinc-900">Laptops</h3>
+                  <span class="gap-2.5 self-stretch px-3.5 py-1.5 mt-2 text-sm font-medium text-red-600 bg-red-100 min-h-[28px] rounded-[29px]">
+                    -15%
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="flex flex-col flex-1">
+              <div class="flex gap-5 pr-5 bg-white">
+                <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[235px]"></div>
+                <div class="flex flex-col items-center my-auto max-w-full w-[140px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d63618d4a2ca342eb96204bcbc8742884f3b43155650802d6487314506190a69?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain self-stretch w-full aspect-square" alt="GoPro camera" />
+                  <h3 class="mt-3 text-base text-zinc-900">GoPro cameras</h3>
+                  <span class="gap-2.5 self-stretch px-3.5 py-1.5 mt-2 text-sm font-medium text-red-600 whitespace-nowrap bg-red-100 min-h-[28px] rounded-[29px]">
+                    -40%
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="flex flex-col flex-1 whitespace-nowrap">
+              <div class="flex gap-5 pr-5 bg-white">
+                <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[235px]"></div>
+                <div class="flex flex-col items-center my-auto max-w-full w-[140px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/15483a671edb85b0522c120764aa60b0399ada1c5cb3d5adbb9f0ad0535eaf1f?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain self-stretch w-full aspect-square" alt="Headphones" />
+                  <h3 class="mt-3 text-base text-zinc-900">Headphones</h3>
+                  <span class="gap-2.5 self-stretch px-3.5 py-1.5 mt-2 text-sm font-medium text-red-600 bg-red-100 min-h-[28px] rounded-[29px]">
+                    -25%
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="flex flex-col flex-1">
+              <div class="flex gap-5 pr-5 bg-white">
+                <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[235px]"></div>
+                <div class="flex flex-col items-center my-auto max-w-full w-[140px]">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6342d240b78f215de7fa56f40e8a651a4d2ce1df160210949b1d267bfd15138?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain self-stretch w-full aspect-square" alt="Canon camera" />
+                  <h3 class="mt-3 text-base text-zinc-900">Canon cameras</h3>
+                  <span class="gap-2.5 self-stretch px-3.5 py-1.5 mt-2 text-sm font-medium text-red-600 whitespace-nowrap bg-red-100 min-h-[28px] rounded-[29px]">
+                    -25%
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="flex flex-col rounded-none">
+    <div class="px-0.5 w-full bg-white rounded-md border border-solid border-neutral-200 stroke-neutral-200 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col">
+        <div class="flex flex-col w-[24%] max-md:ml-0 max-md:w-full">
+          <div class="flex relative flex-col grow items-start pt-5 pr-14 pb-32 pl-5 rounded-none aspect-[1.089] max-md:pr-5 max-md:pb-24">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f01f45f6464368dfd35164000a3fac507b3543fc71f4e6eb6399d04eb9ffd01?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-cover absolute inset-0 size-full" alt="Home and outdoor background image" />
+            <h2 class="relative text-xl font-semibold tracking-normal leading-7 text-zinc-900">Home and outdoor</h2>
+            <a href="#" class="flex relative flex-col justify-center items-center px-4 mt-5 text-base font-medium text-center bg-white rounded-md border border-white border-solid shadow-sm min-h-[40px] text-zinc-900">
+              <span class="gap-2.5">Source now</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col ml-5 w-[76%] max-md:ml-0 max-md:w-full">
+          <div class="flex flex-col w-full max-md:max-w-full">
+            <div class="max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-10 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Soft chairs</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d8f304ec9bfa7b26d23e56bfd736dc9f3f864e0a1c9b9bdfd261ad5f5b109c01?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Soft chair" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-9 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Sofa & chair</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1811be14c315e62abbeec5c8146fd0394cf00177ad78125b7074d6c1aaaa5084?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Sofa and chair" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-4 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Kitchen dishes</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f1368d3cc08f929a57180a6e24a2608fec37653faaca3c9fde7073de66e8916?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Kitchen dishes" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-3 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Smart watches</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf0bdd902332a6d74da94c229d43e73b8731e223474f87d618cbe592c5289827?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Smart watch" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-6 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Kitchen mixer</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 100</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c801e5f51a2065eaec05ea55b24cd9aacb0417a65f7cf8592077e9b852a53a6?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Kitchen mixer" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-10 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Blenders</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 39</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/91db32197438ecdacd872ebba804cfc48bea6468108cdc34ff0b64d0b7126a40?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Blender" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-1.5 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Home appliance</h3>
+                            <p class="mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1cc807195bdeea7fbc8e83f586127f924212a522f9dff4e75309a2b3e84e3ff?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Home appliance" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-6 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Coffee maker</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 10</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/03e209593cbb2278742ed71a39331d740fcda3450b1a56a690920a151da5a896?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" alt="Coffee maker" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="flex flex-col rounded-none">
+    <div class="px-0.5 w-full bg-white rounded-md border border-solid border-neutral-200 stroke-neutral-200 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col">
+        <div class="flex flex-col w-[24%] max-md:ml-0 max-md:w-full">
+          <div class="flex relative flex-col grow items-start pt-5 pr-14 pb-24 pl-5 rounded-none aspect-[1.089] max-md:pr-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5fe709d717e630c6e42bee356755636e66b766c5caafa88c03a9c07a953c3230?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Consumer electronics and gadgets background" class="object-cover absolute inset-0 size-full" />
+            <h2 class="relative text-xl font-semibold tracking-normal leading-7 text-zinc-900">
+              Consumer electronics and gadgets
+            </h2>
+            <a href="#" class="flex relative flex-col justify-center items-center px-4 mt-6 text-base font-medium text-center bg-white rounded-md border border-white border-solid shadow-sm min-h-[40px] text-zinc-900">
+              <span class="gap-2.5">Source now</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col ml-5 w-[76%] max-md:ml-0 max-md:w-full">
+          <div class="flex flex-col w-full max-md:max-w-full">
+            <div class="max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-3 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Smart watches</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11100383d7a685f4569cf9db659e345585bf6c0f8ae7ec2c1b183ce97d4fb4fc?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Smart watch" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-10 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Cameras</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 89</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/99804598949a6f8c67f8b4472c8475744641d6070ddaea569fbd8db5a8084f98?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Camera" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-8 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Headphones</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 10</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0cd96f3e88a09a6c4b74f70628df20c6aaed692ba94260edeaa53a79b0b8e0ba?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Headphones" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-3 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Smart watches</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 90</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf721d0590661c8f586ed8ec075830edff971e9b6b91823a74014477af73cd6e?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Smart watch" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="max-md:max-w-full">
+              <div class="flex gap-5 max-md:flex-col">
+                <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-10 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Gaming set</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 35</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/297b0ed6da7deb3accf8d6417d1bfaa1e3ab65b3f261667d51406de9a15c95b7?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Gaming set" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-6 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Laptops & PC</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 340</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8844f1f184366a3ea1b04aac5bda4a0511c545876d013e2d1d13985a9fc16e02?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Laptop" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-6 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Smartphones</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 19</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8fe0c5621e796c4358dd6a573b6a8fc53ff0cd425c79d1a536e5e0c22b02e4a?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Smartphone" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div class="flex flex-col w-full">
+                    <div class="flex px-px bg-white">
+                      <div class="shrink-0 w-px border border-solid bg-neutral-200 border-neutral-200 h-[127px]"></div>
+                      <div class="flex flex-col self-start mt-5 w-full">
+                        <div class="flex gap-6 items-start self-start ml-4 max-md:ml-2.5">
+                          <div class="flex flex-col self-start">
+                            <h3 class="text-base text-zinc-900">Electric kettle</h3>
+                            <p class="self-start mt-2.5 text-sm text-gray-400">From USD 240</p>
+                          </div>
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/859e1ab0c8f2b844ffc6ee088d6b071d98a6c55b3bab71572077f7a632887435?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Electric kettle" class="object-contain shrink-0 self-end mt-6 aspect-square w-[82px]" />
+                        </div>
+                        <div class="shrink-0 h-px border border-solid bg-neutral-200 border-neutral-200"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <div class="relative w-full">
+    <!-- Background Image -->
+    <img 
+      loading="lazy" 
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/67df727a98b518eda13f7251e06d808b08a28663e270ba6219e20775abe709c1?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" 
+      class="absolute top-0 left-0 w-full h-full object-cover z-0" 
+      alt="Banner image" 
+    />
+  
+    <!-- Content Section -->
+    <section class="relative flex flex-col rounded-none z-10 bg-opacity-70 bg-white">
+      <div class="px-9 py-9 w-full rounded-none max-md:px-5 max-md:max-w-full">
+        <div class="flex gap-5 max-md:flex-col">
+          <div class="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
+            
+          </div>
+          <div class="flex flex-col ml-5 w-[56%] max-md:ml-0 max-md:w-full">
+            <form class="flex flex-col items-start px-5 py-8 mx-auto w-full bg-white rounded-md shadow-[0px_1px_2px_rgba(56,56,56,0.25)] max-md:mt-10 max-md:max-w-full">
+              <h3 class="text-xl font-semibold tracking-normal leading-snug text-zinc-900">Send quote to suppliers</h3>
+              <label for="itemNeeded" class="sr-only">What item you need?</label>
+              <input type="text" id="itemNeeded" class="self-stretch px-2.5 py-4 mt-6 text-base bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 text-zinc-900 max-md:pr-5 max-md:max-w-full" placeholder="What item you need?" aria-label="What item you need?">
+              <label for="itemDetails" class="sr-only">Type more details</label>
+              <textarea id="itemDetails" class="flex flex-col self-stretch px-3 py-4 mt-6 text-base text-gray-400 bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 max-md:max-w-full" placeholder="Type more details" aria-label="Type more details"></textarea>
+              <div class="flex gap-3 mt-6 max-w-full w-[325px]">
+                <div class="flex flex-col text-base whitespace-nowrap text-zinc-900">
+                  <label for="quantity" class="sr-only">Quantity</label>
+                  <input type="text" id="quantity" class="px-2.5 py-4 bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 max-md:pr-5" placeholder="Quantity" aria-label="Quantity">
+                </div>
+                <div class="flex flex-col">
+                  <label for="unit" class="sr-only">Unit</label>
+                  <select id="unit" class="px-2.5 py-4 bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200 text-zinc-900">
+                    <option value="pcs">PCS</option>
+                    <option value="dozen">1</option>
+                    <option value="kg">2</option>
+                    <option value="liters">3</option>
+                    <option value="custom">4</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="flex flex-col justify-center items-center px-4 mt-6 text-base font-medium text-center text-white rounded-md bg-[linear-gradient(180deg,#127FFF_0%,#0067FF_100%)] min-h-[50px]">
+                <span class="gap-2.5">Send inquiry</span>
+              </button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  
+<br>
+  <section class="flex flex-col">
+    <h2 class="self-start text-2xl font-semibold tracking-normal leading-none text-zinc-900 max-md:ml-2.5">Recommended Items</h2>
+    <div class="flex flex-wrap gap-5 mt-8">
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-6 bg-white aspect-square max-md:px-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/74cc20b43234849bc3f1a8536b1587288000ad19e4b1336aa1f0d1b90eec780e?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="T-shirts with multiple colors, for men" class="object-contain aspect-[0.9] w-[151px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$10.30</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">T-shirts with multiple colors, for men</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col items-center self-stretch px-3 pt-2 pb-4 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aba5ea624e7bb2a8282f474872f84960582a099ee96f411125ab623680a56f9e?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Jeans shorts for men blue color" class="object-contain aspect-[0.99] w-[174px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$10.30</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Jeans shorts for men blue color</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-5 bg-white aspect-square max-md:pr-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/19e3ea9cbbdab8556be933276370b9a04ef6b1565be6754004e625760e4c0c44?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Brown winter coat medium size" class="object-contain aspect-[0.95] w-[158px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$12.50</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Brown winter coat medium size</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-4 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b586d15b6e5c82ef977229a817170bdf23a886211d1cb4aece2f60e9a00c3c5c?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Jeans bag for travel for men" class="object-contain aspect-[1.01] w-[170px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$34.00</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Jeans bag for travel for men</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-12 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-3.5 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b06f54c775ed8fabf797829d09b3231f98643e7d6854b64ea261bf04f1704fcc?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Leather wallet" class="object-contain aspect-[1.02] w-[174px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$99.00</p>
+          <p class="mt-2.5 text-base tracking-normal text-gray-400">Leather wallet</p>
+        </div>
+      </article>
+    </div>
+    <div class="flex flex-wrap gap-5 mt-5 max-md:mr-1">
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-7 bg-white aspect-square max-md:px-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1af7d86dafd34092482d1101382f340db43b1aaa2ee57d9dbcacedd32195116a?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Canon camera black, 100x zoom" class="object-contain aspect-[0.99] w-[148px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$9.99</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Canon camera black, 100x zoom</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex flex-col justify-center items-center self-stretch px-1 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f265b974e1af1393556f835dada55320d26056aab2bc1d5268f0cbb78a824227?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Headset for gaming with mic" class="object-contain aspect-[1.03] w-[195px]" />
+          </div>
+          <p class="mt-5 text-base font-medium leading-none text-zinc-900">$8.99</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Headset for gaming with mic</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-4 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb2a5efb0d1c9b8d6a164ea497f8d4bb545e376be5e1fe3f6b721625ce62ee17?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Smartwatch silver color modern" class="object-contain aspect-[1.02] w-[173px]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$10.30</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Smartwatch silver color modern</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1">
+        <div class="flex flex-col items-start px-2.5 pt-2.5 pb-6 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <div class="flex overflow-hidden flex-col justify-center items-center self-stretch px-2.5 bg-white aspect-square">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0dbbc04fa01d8ca7f7328ad1fc93fda3e095bd7f5f21291610c17a8b3eb5184d?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Blue wallet for men leather material" class="object-contain w-48 aspect-[1.02]" />
+          </div>
+          <p class="mt-3.5 text-base font-medium leading-none text-zinc-900">$10.30</p>
+          <p class="mt-2.5 text-base tracking-normal leading-6 text-gray-400">Blue wallet for men leather material</p>
+        </div>
+      </article>
+      <article class="flex flex-col flex-1 text-base">
+        <div class="flex flex-col items-start px-4 py-5 bg-white rounded-md border border-solid border-neutral-200 fill-white stroke-neutral-200">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b186589492536512cbc464ddbfacc386001dab8adca1acd2fb97a6328793ebcb?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" alt="Jeans bag for travel for men" class="object-contain self-stretch w-full aspect-[1.02]" />
+          <p class="mt-5 font-medium leading-none text-zinc-900">$80.95</p>
+          <p class="mt-2.5 tracking-normal leading-6 text-gray-400">Jeans bag for travel for men</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <br>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Our extra services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img class="w-full h-36 object-cover" src="./Images/image 108.svg" alt="Source from Industry Hubs">
+        <div class="flex justify-between items-center px-4 py-2">
+          <h3 class="text-gray-800 font-medium">Source from Industry Hubs</h3>
+          <span class="text-gray-500 text-xl">&#128269;</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img class="w-full h-36 object-cover" src="./Images/Mask group.svg" alt="Customize Your Products">
+        <div class="flex justify-between items-center px-4 py-2">
+          <h3 class="text-gray-800 font-medium">Customize Your Products</h3>
+          <span class="text-gray-500 text-xl">&#128203;</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img class="w-full h-36 object-cover" src="./Images/image 106.svg" alt="Fast, reliable shipping">
+        <div class="flex justify-between items-center px-4 py-2">
+          <h3 class="text-gray-800 font-medium">Fast, reliable shipping by ocean or air</h3>
+          <span class="text-gray-500 text-xl">&#9992;&#65039;</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img class="w-full h-36 object-cover" src="./Images/Mask group (1).svg" alt="Product monitoring">
+        <div class="flex justify-between items-center px-4 py-2">
+          <h3 class="text-gray-800 font-medium">Product monitoring and inspection</h3>
+          <span class="text-gray-500 text-xl">&#128274;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+  <section class="flex flex-col pr-20 max-md:pr-5">
+    <h2 class="self-start text-2xl font-semibold tracking-normal leading-none text-zinc-900">Suppliers by region</h2>
+    <div class="flex flex-wrap gap-5 justify-between mt-6 max-md:max-w-full">
+      <div class="flex flex-col">
+        <div class="flex gap-3">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/283bbc396c7e2a5045cd282b0303db934e281c4877aacb2e4cb6473c39092dcf?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Arabic Emirates" />
+          <div class="flex flex-col">
+            <p class="text-base tracking-normal text-zinc-900">Arabic Emirates</p>
+            <p class="z-10 self-start -mt-1 text-sm text-gray-400">shopname.ae</p>
+          </div>
+        </div>
+        <div class="flex gap-3 self-start mt-2.5 whitespace-nowrap">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/90b0faf73be605e96b835b5165616590adfcd0aa9e0ba8f35b2809c10fc2d024?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Denmark" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">Denmark</p>
+            <p class="text-sm text-gray-400">denmark.com.dk</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col whitespace-nowrap">
+        <div class="flex gap-3 self-start">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b606cbf111b1cc93b11972ebb131f90202feb2cfc298473eb35320356303ac0c?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Australia" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">Australia</p>
+            <p class="z-10 -mt-1 text-sm text-gray-400">shopname.ae</p>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-2.5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/095f50f55bc5a0b644636e462d0a37955ed3ea579728ae81db67642c8cfe35e7?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of France" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">France</p>
+            <p class="text-sm text-gray-400">shopname.com.fr</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex gap-3 self-start">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/97f3f358267c6a5825edd281c27c301794c3403b5fb82c1bdc2b08c1e41f117c?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of United States" />
+          <div class="flex flex-col">
+            <p class="text-base tracking-normal text-zinc-900">United States</p>
+            <p class="z-10 self-start -mt-1 text-sm text-gray-400">shopname.ae</p>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-2.5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/283bbc396c7e2a5045cd282b0303db934e281c4877aacb2e4cb6473c39092dcf?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Arabic Emirates" />
+          <div class="flex flex-col">
+            <p class="text-base tracking-normal text-zinc-900">Arabic Emirates</p>
+            <p class="z-10 self-start -mt-1 text-sm text-gray-400">shopname.ae</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col whitespace-nowrap">
+        <div class="flex gap-3 max-md:mr-1">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c570efc416d96838394f275ab6d8c6b091e6e92ee3c6e16b4098d69b9ff641aa?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Russia" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">Russia</p>
+            <p class="text-sm text-gray-400">shopname.ru</p>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-2.5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9fab8363a349d831660cf84f4d72d4a573a31b158479b0b3fe9a099e1f5c542?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of China" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">China</p>
+            <p class="text-sm text-gray-400">shopname.ae</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex gap-3 self-start whitespace-nowrap">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d88d197830ff94f2956af24f6da82caa192ea46def9e3ef2d4f7bc4da35376f?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Italy" />
+          <div class="flex flex-col">
+            <p class="self-start text-base tracking-normal text-zinc-900">Italy</p>
+            <p class="text-sm text-gray-400">shopname.it</p>
+          </div>
+        </div>
+        <div class="flex gap-3 mt-2.5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/717209b3edbbd6ba667642f02a906bd39053032c0a67ddcdae54d75147ead9a2?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-7 aspect-[1.4]" alt="Flag of Great Britain" />
+          <div class="flex flex-col">
+            <p class="text-base tracking-normal text-zinc-900 max-md:mr-2.5">Great Britain</p>
+            <p class="z-10 -mt-1 text-sm text-gray-400">shopname.co.uk</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="flex flex-col text-base">
+    <div class="flex flex-col justify-center items-center px-20 py-10 w-full bg-gray-100 max-md:px-5 max-md:max-w-full">
+        <div class="flex flex-col items-center max-w-full w-[538px]">
+            <h2 class="text-xl font-semibold tracking-normal leading-snug text-center text-zinc-900">
+                Subscribe on our newsletter
+            </h2>
+            <p class="self-stretch tracking-normal text-center text-zinc-600 max-md:max-w-full">
+                Get daily news on upcoming offers from many suppliers all over the world
+            </p>
+            <form class="flex gap-2 mt-5 max-w-full whitespace-nowrap w-[392px]">
+                <div class="flex flex-col grow shrink-0 text-gray-400 basis-0 w-fit">
+                    <div class="flex gap-1.5 px-2 py-2.5 bg-white rounded-md border border-solid border-zinc-200 stroke-zinc-200">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec6e8473b5698106715bcf14857123c255fdc37563db9f8dda7b27ffc688f077?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 aspect-square w-[22px]" alt="" />
+                        <label for="emailInput" class="sr-only">Email</label>
+                        <input type="email" id="emailInput" placeholder="Email" aria-label="Email" class="grow shrink my-auto w-[226px] bg-transparent border-none focus:outline-none" />
+                    </div>
+                </div>
+                <button type="submit" class="flex flex-col justify-center items-center px-4 font-medium text-center text-white rounded-md bg-[linear-gradient(180deg,#127FFF_0%,#0067FF_100%)] min-h-[40px]">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<br>
+<footer class="flex flex-col pt-10 text-base bg-white">
+  <div class="flex flex-wrap gap-5 justify-between items-start self-center w-full text-gray-400 max-w-[1125px] max-md:max-w-full">
+    <section class="flex flex-col items-start self-stretch tracking-normal leading-6 text-neutral-600">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5af4fc6d55e626ecb9f3bc37b6350d7cee5a27e5df4058e263df59ceed04f41e?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain max-w-full aspect-[3.28] w-[151px]" alt="Company logo" />
+      <p class="self-stretch mt-4">Best information about the company goes here but now lorem ipsum is</p>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/402c3777416e6a10d4060d41b8094ff1aaebe57d00e6492ddd9ca2cef42df285?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain mt-4 max-w-full aspect-[6.25] w-[200px]" alt="Social media icons" />
+    </section>
+    <nav class="flex flex-col items-start">
+      <h2 class="font-medium leading-none text-zinc-900">About</h2>
+      <ul class="list-none p-0">
+        <li class="mt-2.5 tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">About Us</a></li>
+        <li class="self-stretch tracking-normal max-md:mr-2"><a href="#" class="text-gray-400 hover:text-gray-600">Find store</a></li>
+        <li class="self-stretch tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Categories</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Blogs</a></li>
+      </ul>
+    </nav>
+    <nav class="flex flex-col items-start">
+      <h2 class="self-stretch font-medium leading-none text-zinc-900">Partnership</h2>
+      <ul class="list-none p-0">
+        <li class="mt-2.5 tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">About Us</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Find store</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Categories</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Blogs</a></li>
+      </ul>
+    </nav>
+    <nav class="flex flex-col items-start">
+      <h2 class="font-medium leading-none text-zinc-900">Information</h2>
+      <ul class="list-none p-0">
+        <li class="mt-2.5 tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Help Center</a></li>
+        <li class="self-stretch tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Money Refund</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Shipping</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Contact us</a></li>
+      </ul>
+    </nav>
+    <nav class="flex flex-col items-start">
+      <h2 class="self-stretch font-medium leading-none text-zinc-900 max-md:mr-2">For users</h2>
+      <ul class="list-none p-0">
+        <li class="mt-2.5 tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Login</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Register</a></li>
+        <li class="tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">Settings</a></li>
+        <li class="self-stretch tracking-normal"><a href="#" class="text-gray-400 hover:text-gray-600">My Orders</a></li>
+      </ul>
+    </nav>
+    <section class="flex flex-col font-medium leading-none text-zinc-900">
+      <h2 class="self-start">Get app</h2>
+      <a href="#" class="mt-4">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2d37e10d3e2ae10cce3e8528b706520d9b8fa598df2636f4d3245e66c25e6edc?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain aspect-[2.95] w-[124px]" alt="Download on App Store" />
+      </a>
+      <a href="#" class="mt-2">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87896b7962676c54c3e229935536fa4c607236c30253431d6374300c40d032b5?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain aspect-[2.95] w-[124px]" alt="Get it on Google Play" />
+      </a>
+    </section>
+  </div>
+  <div class="flex flex-col justify-center items-center px-16 py-6 mt-14 w-full tracking-normal bg-gray-100 border-t border-solid border-t-zinc-200 text-zinc-600 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+    <div class="flex flex-wrap gap-5 justify-between w-full max-w-[1176px] max-md:max-w-full">
+      <p>© 2023 Ecommerce.</p>
+      <div class="flex gap-1.5 text-right whitespace-nowrap">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7044e182cff03b529c0efe97f5b9abf23e3bb3fe8c34b07a1523211aa52645f9?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 my-auto w-6 aspect-[1.41]" alt="Language icon" />
+        <div class="flex">
+          <span class="grow">English</span>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1030d9f0fef56bcbf45b673f8fa9c4dab743dbd7be4ceeefc537a358a9ff9c5?placeholderIfAbsent=true&apiKey=517aaac069a941a4a2f05b64ef5a46ea" class="object-contain shrink-0 w-6 aspect-square" alt="Dropdown arrow" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
